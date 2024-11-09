@@ -1,0 +1,49 @@
+---
+
+---
+
+<!-- ScrollUpBtn -->
+<button
+  id="scrollUp"
+  class="liquid-button fixed bottom-8 right-4 flex items-center justify-center 
+    p-2 m-2 rounded-full bg-transparent text-white cursor-pointer transition-colors duration-100 font-bold">
+  <div class="liquid wave"></div>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-5 h-5 stroke-[#012B27] group-hover:stroke-[#012B27]"
+    fill="none"
+    viewBox="0 0 24 24"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M19 15l-7-7-7 7"></path>
+  </svg>
+</button>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("scrollUp");
+    const liquid = button.querySelector(".liquid");
+
+    button.addEventListener("mousemove", (e) => {
+      const { width } = button.getBoundingClientRect();
+      const mouseX = e.clientX - button.getBoundingClientRect().left;
+      const fillPercentage = mouseX / width; // Get fill percentage based on mouse position
+      (liquid as HTMLElement).style.height = `${80 + 50 * fillPercentage}%`; // Fill more based on mouse position
+    });
+
+    button.addEventListener("mouseleave", () => {
+      (liquid as HTMLElement).style.height = '50%'; // Reset height on mouse leave
+    });
+
+    button.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    });
+  });
+</script>

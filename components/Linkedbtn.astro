@@ -1,0 +1,68 @@
+---
+
+---
+<div id="linkedbtn">
+  <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" target="_blank">
+    <button id="waveButton" class="relative overflow-hidden bg-white rounded-full py-5 px-10 mt-20 text-2xl" style="color: #000000">
+      Find me on LinkedIn!
+      <span class="liquid -mt-7"></span>
+    </button>
+  </a>
+</div>
+
+<style>
+#linkedbtn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden; /* Ensures the liquid effect doesn’t overflow the button */
+
+}
+
+.liquid {
+  position: absolute;
+  bottom: -10;
+  left: 50%;
+  height: 0; 
+  background: rgba(255,218,3,0.8); /* Color of the liquid effect */
+  transform: translateX(-50%);
+  transition: height 0.8s ease; /* Smooth transition */
+  border-radius: 100%; /* Rounded edges */
+  pointer-events: none; /* Prevent pointer events on the liquid */
+  z-index: -10; /* Ensure it stays behind the button text */
+}
+
+button {
+  position: relative; /* Ensure the button has a position context for the liquid */
+  z-index: 1; /* Ensure button text stays above the liquid */
+}
+
+button:hover .liquid {
+  height: 100%; /* Fill effect on hover */
+}
+
+  </style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const button = document.getElementById("waveButton") as HTMLElement; // Cast to HTMLElement
+    const liquid = button.querySelector(".liquid") as HTMLElement; // Cast to HTMLElement
+
+    button.addEventListener("mousemove", (e: MouseEvent) => { // Explicitly typing the event
+      const { width } = button.getBoundingClientRect();
+      const mouseX = e.clientX - button.getBoundingClientRect().left;
+      const fillPercentage = mouseX / width; // Get fill percentage based on mouse position
+      liquid.style.height = `${10 + 200 * fillPercentage}%`; // Fill more based on mouse position
+    });
+
+    button.addEventListener("mouseleave", () => {
+      liquid.style.height = '0%'; // Reset height on mouse leave
+    });
+
+    button.addEventListener("click", (e: MouseEvent) => {
+      e.preventDefault(); // Prevent default anchor behavior
+      window.open("https://www.linkedin.com/in/charlotte-k-187b9b2a", "_blank"); // Open LinkedIn in a new tab
+    });
+  });
+</script>
+
+
