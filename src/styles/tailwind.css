@@ -4,12 +4,8 @@
 
 
 @layer base {
- .custom-main-bg {
-    background-image: url("/img/overlay.png"), url("/img/bg.png");
-    background-repeat: repeat, no-repeat;
-    background-size: auto, 100% 100%;
-    background-attachment: fixed;
-    overflow-y: scroll;
+ .custom-main-bg { /* DONE */
+    background-color:var(--background-color)
   }
   .custom-skill-bg {
     position: relative; /* Ensure the parent is positioned for absolute positioning of the pseudo-element */
@@ -67,12 +63,14 @@
   }
 
   :root {/* DONE */
-    --primary-color-500: #c42121;
+    --primary-color-500: #212121;
     --secoundary-color-500: #1486c7;
+    --background-color: #F8F6F5;
     --main-font: "Poppins", sans-serif;
   }
 
    h1 {/* DONE */
+    @apply text-5xl md:text-7xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
     font-style: normal;
@@ -80,6 +78,7 @@
   }
   
   h2 {/* DONE */
+    @apply text-2xl md:text-4xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
     font-style: normal;
@@ -87,6 +86,7 @@
   }
 
   h3 {/* DONE */
+    @apply text-sm md:text-2xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
     font-style: normal;

@@ -14,78 +14,66 @@ import Footer from "../components/Footer.astro";
   <div class=" main">
 
   <!-- ---------- Hero section ---------- -->
-  <section id="section 1"><!-- id rettet -->
+  <section id="section 1"><!-- færdig rettet-->
     <div>
-      <h1 class="text-5xl md:text-8xl mb-0 uppercase ml-[2.4rem] md:ml-24">DIGITAL DESIGNER</h1><span class="border-solid border-b-2 border-[#fede3e] flex-1 h-1 ml-2"></span>
-      <h2 class="pt-40 md:pt-48 ml-[2.4rem] md:ml-[6.4rem] text-primary">CHARLOTTE KOUDAL <span><h3>MMD STUDENT</h3></span></h2>
+      <h1 class="mb-0 ml-[3.6rem] md:ml-[12.6rem] flex items-left mt-40 md:mt-36"> DIGITAL DESIGNER
+        <span class="hidden md:block border-solid border-2 border-primary w-96 h-[0.25px] ml-2 mt-14"></span>
+      </h1>
+      
+      <div class="flex pt- md:pt-2 ml-[3.6rem] md:ml-[16.4rem] space-x-2">
+        <h2>CHARLOTTE KOUDAL</h2>
+        <h3 class="mt-[0.6rem] md:mt-[0.4rem]">MMD STUDENT</h3>
+      </div>
+      
+     <div>
+      <img src="../svg/flower1.svg" alt="Blomst" class="mt-[4.6rem] md:mt-12 w-auto pb-10" />
      </div>
+    </div>
   </section>
 
 <!-- ---------- About section ---------- -->
-<section id="section 2"><!-- id rettet -->
-<div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pb-32 pb-20 px-8 md:px-16 lg:px-32 xl:px-64 md:gap-10 gap-6">
+<section id="section 2"><!-- færdig rettet mobile -->
+ <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pb-32 pb-20 px-8 md:px-16 lg:px-32 xl:px-64 md:gap-10 gap-6">
   
   <!-- Mobile Layout -->
-  <div class="block lg:hidden">
-    <div class="flex justify-center items-center pt-0">
-      <h2 class="text-5xl md:text-4xl mb-0 uppercase -ml-[2.1rem] -mt-4 text-primary">Who</h2>
-      <h2 class="font-serif text-2xl md:text-4xl mb-0 lowercase ml-4 mt-0 text-white">
-        am <span style="text-transform: uppercase;">I</span> and what are my aspirations?
-      </h2>
-      
-    </div>
+  <div class="block lg:hidden pt-8">
+    <div>
+      <div class="flex pt- md:pt-2 ml-[1.6rem] md:ml-[16.4rem] space-x-2 pb-16">
+        <h2><strong>ABOUT</strong></h2>
+        <span class="border-solid border-[0.2px] border-primary w-80 h-[0.25px] mt-[24px] ml-48"></span>
+      </div>
+
+      <div>
+        <p class="mb-4">I’m a multimedia design student at KEA, passionate about the UX design process. I’m currently seeking an internship where I can further develop my skills and contribute to impactful design projects.</p>
+        <p class="mb-4">I love creating solutions that balance functionality, aesthetics, and impact, addressing both user and business needs. My process includes:</p>
     
-    <div class="flex justify-center md:items-center items-start pt-28">  
-      <Blob class="ml-0"/> <!-- Adjust margin to bring it closer -->
-    </div>
+        <ul class="list-disc ml-14 mb-4 space-y-2 "><!-- ret text størrelse -->
+          <li><strong>User Research:</strong> Interviews, user stories, journey mapping</li>
+          <li><strong>Design Iteration:</strong> Developing ideas through feedback and testing</li>
+          <li><strong>Visual Design:</strong> Crafting mood boards, style guides, applying typography & color theory</li>
+          <li><strong>Prototyping & Testing:</strong> Using Figma for wireframes, information architecture, and usability testing</li>
+        </ul>
     
-    <div class="flex flex-wrap h-auto gap-4 ml-[1.8rem] -mt-100"> <!-- Adjust negative margin to bring the paragraph closer -->
-      <div class="flex flex-col justify-end items-center">
-        <p class="max-w-lg flex-grow ml-0 text-white">I am a multimedia design student in my 3rd semester at KEA, driven by a lifelong passion for art and design. Through my studies, I have developed skills in digital design methods, gaining experience in user-oriented web solutions, prototyping in Figma, and frontend programming with HTML, CSS, and JavaScript.
-          <br><br>
-          I am dedicated to creating meaningful user experiences, with a particular interest in UX/UI design. I love bringing ideas to life and ensuring that my designs are not only aesthetically pleasing but also intuitive and functional. With a keen eye for detail, I strive to deliver high-quality work that addresses user needs and captures the essence of a brand. <br>
-          <br>
-          Teamwork is essential to my approach, as I believe that collaboration and challenging each other’s ideas lead to the best outcomes. I am seeking an internship where I can delve deeper into learning, explore new techniques in UX/UI design, and gain practical experience while pushing the boundaries of design to create valuable solutions for users.
-          <br><br>
-          I enjoy the creative process, from the initial sketch to the final user interface, finding inspiration in the balance between aesthetics and functionality to craft exceptional user experiences.
-        </p>
-        <Linkedbtn />
+        <p class="mb-4 pb-10">I’m driven to design meaningful user experiences that blend visual appeal with functionality. If you’re interested in collaborating, let’s connect!</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center text-center">
+        <img src="../img/profileimg.png" alt="Blomst" class="h-90 mt-2 sm:h-[28rem] md:h-[28rem] lg:h-[28rem] xl:h-[28rem] w-auto" />
+        <div class="flex items-center justify-center -mt-20 pb-10"><Linkedbtn /></div><!-- skal rettes! -->
       </div>
     </div>
   </div>
-
-  <!-- Desktop Layout -->
-  <div class="hidden lg:block">
-    <div class="flex items-center">
-      <h2 class="text-5xl md:text-l mb-0 uppercase ml-24 pt-28 pb-0 text-primary">Who </h2>
-      <h2 class="font-serif text-2xl md:text-l mb-0 lowercase ml-3 pt-32 pb-0" style="color: #FFDA03;">am I in the digital landscape? .. and what are my aspirations?</h2>
-    </div>
-
-    <div class="flex flex-wrap h-auto gap- ml-24 pt-10">
-      <div class="flex flex-col justify-end items-center">
-        <p class="max-w-lg flex-grow">I am a multimedia design student in my 3rd semester at KEA, driven by a lifelong passion for art and design. Through my studies, I have developed skills in digital design methods, gaining experience in user-oriented web solutions, prototyping in Figma, and frontend programming with HTML, CSS, and JavaScript.
-          <br><br>
-          I am dedicated to creating meaningful user experiences, with a particular interest in UX/UI design. I love bringing ideas to life and ensuring that my designs are not only aesthetically pleasing but also intuitive and functional. With a keen eye for detail, I strive to deliver high-quality work that addresses user needs and captures the essence of a brand. <br>
-          <br>
-          Teamwork is essential to my approach, as I believe that collaboration and challenging each other’s ideas lead to the best outcomes. I am seeking an internship where I can delve deeper into learning, explore new techniques in UX/UI design, and gain practical experience while pushing the boundaries of design to create valuable solutions for users.
-          <br><br>
-          I enjoy the creative process, from the initial sketch to the final user interface, finding inspiration in the balance between aesthetics and functionality to craft exceptional user experiences.
-         </p>
-        <div>Linkedbtn</div>
-      </div>
-      
-      <div class="flex justify-center md:items-center items-start">  
-        <Blob class="ml-4"/> <!-- Adjust margin if necessary -->
-      </div>
-    </div>
-  </div>
-</div>
 </section>
 
 <!-- ---------- Skills section ---------- -->
 <section id="section 3"> <!-- id rettet -->
-  <div class="bg-white mt-20 h-auto md:h-130">
-    <h2 class="text-5xl md:text-3xl mb-0 uppercase ml-9 md:ml-[3.7rem] pt-24 pb-28 text-primary">Skills</h2>
+  <div class="flex flex-col">
+
+    <div class="flex pt- md:pt-2 ml-[1.6rem] md:ml-[16.4rem] space-x-2 pb-16">
+      <h2><strong>SKILLS</strong></h2>
+      <span class="border-solid border-[0.2px] border-primary w-80 h-[0.25px] mt-[24px] ml-48"></span>
+    </div>
+
     <div class="grid grid-cols-2 md:grid-cols-5 gap-6 pb-28">
       <div class="flex flex-col items-center"> 
         <Skill

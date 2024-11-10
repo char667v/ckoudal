@@ -15,6 +15,9 @@ export default {
 				'128': '39rem',
 				'130': '44rem',
 			},
+			height: {
+				'0.25': '0.25px',  // Custom height value
+			},
 			keyframes: {
 				float: {
 					'0%, 100%': { transform: 'translateY(0)' },
