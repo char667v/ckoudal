@@ -74,7 +74,7 @@ import Footer from "../components/Footer.astro";
       <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] ml-48"></span>
     </div>
 
-    <div class="grid -gap-x-10 -mt-12 ml-[2rem] md:grid-cols-5">
+    <div class="grid -gap-x-10 -mt-12 ml-[2rem] grid-cols-2 md:grid-cols-5 mb-14">
       <div class="flex flex-col items-center"> 
         <Skill
           imageSrc="/svg/figma_outline.svg"
@@ -121,8 +121,7 @@ import Footer from "../components/Footer.astro";
 
 <!-- ---------- Projectcard section ---------- -->
 <section id="section 4 overflow hidden border"> <!-- færdig rettet mobile -->
-  <div class="flex items-center pt-2 mx-auto w-full sm:w-3/4 md:w-2/3 lg:w-1/2 space-x-2 pb-16">
-  
+  <div class="flex item-center pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
     <h2><strong>PROJECTS</strong></h2>
     <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48"></span>
   </div>
@@ -133,39 +132,53 @@ import Footer from "../components/Footer.astro";
 
 <!-- ---------- Contact section ---------- -->
 
-<section id="section 5"> <!-- færdig rettet mobile -->
+<section id="section 5">
+  <!-- Contact section -->
   <div class="flex flex-col">
-
-<div class="flex pt- md:pt-2 ml-6 md:ml-[16.4rem] space-x-2 pb-16">
-  <h2><strong>CONTACT</strong></h2>
-  <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48"></span>
-</div>
-
-<section id="section 8" class="text-lg leading-9 p-8 pt-16 md:p-16 md:flex md:gap-10 md:justify-start md:items-start">
-  <div class="pb-10 flex-1">
-    <!-- Venstre Kolonne (Kontaktoplysninger) -->
-    <div class="flex flex-col text-primary -ml-5">
-      <p class="font-bold text-xl mb-6 text-white">Let’s work together</p>
-      <p class="text-base text-white">Charlotte Koudal</p> 
-      <p class="text-base text-white">+45 2962 4832</p>
-      <a href="mailto:c.koudal@gmail.com" class="text-white text-base m-0 pl-6 hover:text-accent transition">c.koudal@gmail.com</a>
+    <div class="flex pt- md:pt-2 ml-6 md:ml-[16.4rem] space-x-2 pb-16 -mt-[5rem]">
+      <h2><strong>CONTACT</strong></h2>
+      <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48"></span>
     </div>
+
+    <section class="mt-2 p-8 md:p-16 md:flex md:gap-10 md:justify-start md:items-center">
+      <div class="flex flex-col text-primary ml-0 -mt-20 md:ml-6">
+        <div class="flex items-center">
+          <img src="../svg/pen_papir.svg" alt="pen og papir ikon" class="mt-[2.6rem] ml-6 md:mt-12 w-auto pb-10" />
+          <div>
+            <p>Mail</p>
+            <a href="mailto:c.koudal@gmail.com" class="l-6 hover:text-secondary transition" style="font-family: var(--main-font);">
+              <p class="uppercase">C.koudal@gmail.com</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <img src="../svg/linkedin.svg" alt="Linkedin ikon" class="mt-[2.6rem] ml-3 md:mt-12 w-auto pb-10" />
+          <div>
+            <p>Socials</p>
+            <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" target="_blank" class="hover:text-secondary" style="font-family: var(--main-font);">
+              <p>LINKEDIN</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <img src="../svg/cup.svg" alt="Te kop" class="mt-[1.6rem] ml-6 md:mt-12 w-auto pb-10" />
+          <div>
+            <p>Coffee</p>
+            <p>+45 29 62 48 32</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <div class="pb-10 flex-1 -ml-5">
-    <!-- Højre Kolonne (Sociale Medier Links) -->
-    <div class="flex flex-col">
-      <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" class="text-white text-base pl-6 hover:text-accent transition">LinkedIn</a>
-    </div>
+  <!-- Space to feel comfortably you -->
+  <div class="filter grayscale">
+    <img src="../img/flower.webp" alt="Blomst" class="mx-auto h-96 w-auto -mr-28" />
   </div>
 </section>
 
-<div>
-  <img src="../img/flower.webp" alt="Blomst" class="ml-12 mt-[4.6rem] md:mt-12 w-auto" />
- </div>
-</div>
-
-</section>
 
   <Upbtn />
 </div>
