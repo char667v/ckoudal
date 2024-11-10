@@ -18,15 +18,6 @@ export default {
 			height: {
 				'0.25': '0.25px',  // Custom height value
 			},
-			keyframes: {
-				float: {
-					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-10px)' },
-				},
-			},
-			animation: {
-				float: 'float 3s ease-in-out infinite',
-			},
 		},
 	},
 	variants: {},
