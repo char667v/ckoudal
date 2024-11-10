@@ -59,7 +59,11 @@ import Footer from "../components/Footer.astro";
 
       <div class="flex flex-col items-center justify-center text-center">
         <img src="../img/profileimg.png" alt="Blomst" class="h-90 mt-2 sm:h-[28rem] md:h-[28rem] lg:h-[28rem] xl:h-[28rem] w-auto" />
-        <div class="flex items-center justify-center -mt-20 pb-10 ml-20"><Linkedbtn /></div><!-- skal rettes! -->
+        <div class="flex justify-center -mt-20 pb-10">
+          <div class="ml-20">
+            <Linkedbtn />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -69,7 +73,7 @@ import Footer from "../components/Footer.astro";
 <section id="section 3"> <!-- færdig rettet mobile --> <!-- ret tekst størelse -->
   <div class="">
 
-    <div class="flex pt- md:pt-2 ml-[3.6rem] md:ml-[16.4rem] space-x-2 pb-16">
+    <div class="flex pt-2 ml-4 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
       <h2><strong>SKILLS</strong></h2>
       <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] ml-48"></span>
     </div>
@@ -121,9 +125,9 @@ import Footer from "../components/Footer.astro";
 
 <!-- ---------- Projectcard section ---------- -->
 <section id="section 4 overflow hidden border"> <!-- færdig rettet mobile -->
-  <div class="flex pt- md:pt-2 ml-[3.6rem] md:ml-[16.4rem] space-x-2 pb-16 sticky top-16 ">
+  <div class="flex pt-2 ml-4 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
     <h2><strong>PROJECTS</strong></h2>
-    <span class="border-solid border-[0.2px] border-primary w-[20.4rem] h-[0.25px] mt-[24px] ml-48"></span>
+    <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48"></span>
   </div>
   <div>
    <Projectcardtest/>
