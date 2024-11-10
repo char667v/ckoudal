@@ -5,32 +5,66 @@ import dcdImage from "./public/img/dcd.webp";
 import itmvImage from "./public/img/itmv.webp";
 
 ---
-<div class="photos-section mt-2">
-    <div class="drag-area">
-        <div class="cards cursor-grab absolute" style="top: 475px; left: 5%;">
-           <a href="https://itmv20.netlify.app" target="_blank">
-            <article id="card4">
-                <Image src={itmvImage} alt="Cover for I tråd med verden" class="rounded-lg transition-all duration-300 hover:grayscale-0 shadow-[0_4px_15px_rgba(255,218,3,0.8)] w-[60%] md:w-[300px] h-auto" />
-            </article>
-           </a>
+<section id="section 4 mt-2">
+  <div class="projectcards">
+    <div class="flex flex-col items-center h-screen w-full bg-cover sticky top-40">
+        <div class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#ffffff]">
+            <h5 class="pb-6 uppercase">Plastic Change</h5>
+            <h6>Plastic Change is a Danish organization dedicated to fighting for a world free from plastic pollution.<br><br>
+                 They needed a digital one-page fundraising campaign to encourage individuals to contribute through either a one-time donation or a monthly membership.<br><br>
+                 My primary focus was on project management, the Figma design process, handling coding tasks, and managing routine work.
+            </h6>
         </div>
-
-        <div class="cards cursor-grab absolute" style="top: 512px; left: 45%;">
-           <a href="https://digitalskraldedaggr4.netlify.app/" target="_blank">
-            <article id="card3">
-                <Image src={dcdImage} alt="Cover for Digital cleanup day" class="rounded-lg transition-all duration-300 hover:grayscale-0 shadow-[0_4px_15px_rgba(255,218,3,0.8)] w-[90%] md:w-[500px] h-auto" />
-            </article>
-           </a>
+        <div class="w-4/5">
+            <a href="https://plasticchange17.netlify.app/" target="_blank">
+                <img src="../img/plasticchange.webp" alt="Landingpage for I Tråd Med Verden" class="transition-all duration-300 filter grayscale hover:filter-none"/>
+            </a>
         </div>
+    </div>
 
-        <div class="cards cursor-grab absolute" style="top: 550px; left: 15%;">
-           <a href="https://atk-website.netlify.app/" target="_blank">
-            <article id="card1">
-                <Image src={atkImage} alt="Cover for mit Arbejdernes Tennis Klub" class="rounded-lg transition-all duration-300 hover:grayscale-0 shadow-[0_4px_15px_rgba(255,218,3,0.8)] w-[50%] md:w-[200px] h-auto" />
-            </article>
-          </a>
+    <div class="flex flex-col items-center h-screen w-full bg-cover sticky top-40">
+        <div class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#ffffff]">
+            <h5 class="pb-6 uppercase">Digital Cleanup Day</h5><!-- kom mere tekst på så man ikke kan se det andet proect i baggrunden -->
+            <h6>Digital Cleanup Day was a collaborative group project where we developed a concept for a Danish version of digitalcleanupday.org.<br><br>
+                 I primarily focused on the Figma design process. We also used Astro, Tailwind CSS, and Alpine.js to bring our vision to life.
+            </h6>
         </div>
-     </div>
-</div>
-
-
+        <div class="w-4/5">
+            <a href="https://digitalskraldedaggr4.netlify.app" target="_blank">
+                <img src="../img/dcd.webp" alt="Landingpage for Digital Cleanup Day" class="transition-all duration-300 filter grayscale hover:filter-none"/>
+            </a>
+        </div>
+    </div>
+    
+    <div class="flex flex-col items-center h-screen w-full bg-cover sticky top-40">
+        <div class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#ffffff]">
+            <h5 class="pb-6 uppercase">Arbejdernes Tennisklub</h5>
+            <h6>This project was a second-semester exam assignment where, as a group, we collaborated with Arbejdernes Tennisklub(ATK) to redesign their website.<br><br>
+                 The goal was to simplify the site and make it more user-friendly, with clearer information, aiming to strengthen the community and increase member engagement.<br><br>
+                 My focus was on the Figma design process and developing content for social media.
+            </h6>
+        </div>
+        <div class="w-4/5">
+            <a href="https://atk-website.netlify.app/" target="_blank">
+                <img src="../img/atk.webp" alt="Landingpage for Arbejdernes Tennisklub" class="transition-all duration-300 filter grayscale hover:filter-none"/>
+            </a>
+        </div>
+    </div>
+    
+    <div class="flex flex-col items-center h-screen w-full bg-cover sticky top-40">
+        <div class="w-4/5 lg:w-2/5 mx-auto p-14 bg-[#ffffff]">
+            <h5 class="pb-6 uppercase">I Tråd Med Verden</h5>
+            <h6>
+                For I Tråd Med Verden (ITMV), the task was to develop a digital solution with a web feature and create content for both the website and social media.<br><br>
+                The goal was to generate engagement and increase conversions from both private donors and businesses, with a specific focus on targeting women in corporate positions who could advocate for our cause within their organizations.<br><br>
+                My focus was primarily on the Figma design phase, handling coding tasks and managing routine work.
+            </h6>
+        </div>
+        <div class="w-4/5">
+            <a href="https://itmv20.netlify.app" target="_blank">
+                <img src="../img/itmv.webp" alt="Landingpage for I Tråd Med Verden" class="transition-all duration-300 filter grayscale hover:filter-none"/>
+            </a>
+        </div>
+    </div>
+  </div>
+</section>

@@ -108,8 +108,9 @@
   }
   
   h6 {/* DONE */
-    font-family: "Aboreto", serif;
-    font-weight: 400;
+    font-family: "Poppins", ;
+    font-weight: 80;
+    font-size: small;
     font-style: normal;
     color: var(--primary-color-500);
   }

@@ -1,8 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-/* import Projectcardtest from "../components/Projectcardtest.astro"; */
+import Projectcardtest from "../components/Projectcardtest.astro";
 import Linkedbtn from "../components/Linkedbtn.astro";
-import Blob from "../components/Blob.astro";
 import Skill from "../components/Skill.astro";
 import Upbtn from "../components/Upbtn.astro";
 import Footer from "../components/Footer.astro";
@@ -66,7 +65,7 @@ import Footer from "../components/Footer.astro";
 </section>
 
 <!-- ---------- Skills section ---------- -->
-<section id="section 3"> <!-- id rettet -->
+<section id="section 3"> <!-- færdig rettet mobile --> <!-- ret tekst størelse -->
   <div class="flex flex-col">
 
     <div class="flex pt- md:pt-2 ml-[3.6rem] md:ml-[16.4rem] space-x-2 pb-16">
@@ -74,7 +73,7 @@ import Footer from "../components/Footer.astro";
       <span class="border-solid border-[0.2px] border-primary w-80 h-[0.25px] mt-[24px] ml-48"></span>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-6 pb-28">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-x-0 pb-10 -mt-12">
       <div class="flex flex-col items-center"> 
         <Skill
           imageSrc="/svg/figma_outline.svg"
@@ -107,7 +106,7 @@ import Footer from "../components/Footer.astro";
           headline="CodePen"
           paragraphText="CodePen bruger jeg til at eksperimentere kreativt med design og hurtigt se resultaterne af mine HTML, CSS og JavaScript-projekter i realtid." />
       </div>
-      <div class="flex flex-col items-center"> 
+      <div class="flex flex-col items-center pb-10"> 
         <Skill
           imageSrc="/svg/chat_outline.svg"
           alt="ChatGpt icon"
@@ -120,41 +119,50 @@ import Footer from "../components/Footer.astro";
 </section>
 
 <!-- ---------- Projectcard section ---------- -->
-<section id="section 4"> <!-- id rettet -->
+<section id="section 4 overflow hidden"> <!-- færdig rettet mobile -->
+  <div class="flex pt- md:pt-2 ml-[3.6rem] md:ml-[16.4rem] space-x-2 pb-16 sticky top-20 ">
+    <h2><strong>PROJECTS</strong></h2>
+    <span class="border-solid border-[0.2px] border-primary w-80 h-[0.25px] mt-[24px] ml-48"></span>
+  </div>
   <div>
-   <!-- <Projectcardtest/> -->
+   <Projectcardtest/>
   </div>
 </section> 
 
-<!-- Skill bg -->
-<section id="skillsbg -mt-80">
-<div class="custom-skill-bg min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] xl:min-h-[90vh]"></div>
+<!-- ---------- Contact section ---------- -->
+
+<section id="section 5"> <!-- færdig rettet mobile -->
+  <div class="flex flex-col">
+
+<div class="flex pt- md:pt-2 ml-[3.6rem] md:ml-[16.4rem] space-x-2 pb-16">
+  <h2><strong>CONTACT</strong></h2>
+  <span class="border-solid border-[0.2px] border-primary w-80 h-[0.25px] mt-[24px] ml-48"></span>
+</div>
+
+<section id="section 8" class="text-lg leading-9 p-8 pt-16 md:p-16 md:flex md:gap-10 md:justify-start md:items-start">
+  <div class="pb-10 flex-1">
+    <!-- Venstre Kolonne (Kontaktoplysninger) -->
+    <div class="flex flex-col text-primary -ml-5">
+      <p class="font-bold text-xl mb-6 text-white">Let’s work together</p>
+      <p class="text-base text-white">Charlotte Koudal</p> 
+      <p class="text-base text-white">+45 2962 4832</p>
+      <a href="mailto:c.koudal@gmail.com" class="text-white text-base m-0 pl-6 hover:text-accent transition">c.koudal@gmail.com</a>
+    </div>
+  </div>
+
+  <div class="pb-10 flex-1 -ml-5">
+    <!-- Højre Kolonne (Sociale Medier Links) -->
+    <div class="flex flex-col">
+      <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" class="text-white text-base pl-6 hover:text-accent transition">LinkedIn</a>
+    </div>
+  </div>
 </section>
 
-<!-- ---------- Contact section ---------- -->
-<section class="text-white">
-<!--   <p class="text-lg md:text-l mb-0 ml-9 text-white">Space to feel comfortable you</p> -->
-  <h2 class="text-4xl md:text-l mb-0 uppercase ml-9 pt-4 text-primary">Contact</h2>
-  
+<div>
+  <img src="../svg/flower_bird.svg" alt="Blomst" class="ml-72 mt-[4.6rem] md:mt-12 w-auto pb-10" />
+ </div>
+</div>
 
-  <section id="section 5" class="text-lg leading-9 p-8 pt-16 md:p-16 md:flex md:gap-10 md:justify-start md:items-start">
-    <div class="pb-10 flex-1">
-      <!-- Venstre Kolonne (Kontaktoplysninger) -->
-      <div class="flex flex-col text-primary -ml-5">
-        <p class="font-bold text-xl mb-6 text-white">Let’s work together</p>
-        <p class="text-base text-white">Charlotte Koudal</p> 
-        <p class="text-base text-white">+45 2962 4832</p>
-        <a href="mailto:c.koudal@gmail.com" class="text-white text-base m-0 pl-6 hover:text-accent transition">c.koudal@gmail.com</a>
-      </div>
-    </div>
-  
-    <div class="pb-10 flex-1 -ml-5">
-      <!-- Højre Kolonne (Sociale Medier Links) -->
-      <div class="flex flex-col">
-        <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" class="text-white text-base pl-6 hover:text-accent transition">LinkedIn</a>
-      </div>
-    </div>
-  </section>
 </section>
 
   <Upbtn />
