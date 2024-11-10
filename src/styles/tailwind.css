@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
  .custom-main-bg {
     background-image: url("/img/overlay.png"), url("/img/bg.png");
@@ -59,27 +60,64 @@
   } */
 
   /************ fonts ********************/
-  body {
-    @apply font-serif;
+  @layer utilities {
+    .font-main {/* DONE */
+      font-family: var(--main-font);
+    }
+  }
+
+  :root {/* DONE */
+    --primary-color-500: #c42121;
+    --secoundary-color-500: #1486c7;
+    --main-font: "Poppins", sans-serif;
+  }
+
+   h1 {/* DONE */
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color-500);
   }
   
-  h2 {
-    @apply text-4xl md:text-lg mb-0 uppercase ml-6 pt-24; /* Anvend Tailwind-klasser */
-    color: #6E744C; /* Brug den specifikke farve */
-  }
-  h3 {
-    @apply md:text-lg mb-0 uppercase ml-6 pt-24; /* Anvend Tailwind-klasser */
-    color: #ffffff; /* Brug den specifikke farve */
+  h2 {/* DONE */
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color-500);
   }
 
-
-  p {
-    @apply font-serif;
+  h3 {/* DONE */
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color-500);
   }
-  p {
-      @apply text-lg md:text-lg mb-0 ml-6; /* Anvend Tailwind-klasser */
-      color: #6E744C; /* Brug den specifikke farve */
-    }
+
+  h4 {/* DONE */
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color-500);
+  }
+  
+  h5 {/* DONE */
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color-500);
+  }
+  
+  h6 {/* DONE */
+    font-family: "Aboreto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color-500);
+  }
+
+  p {/* DONE */
+    @apply text-lg md:text-lg mb-0 ml-6;
+  }
+
 
   .blob-custom {
       position: relative; /* or absolute if you want to position it within a parent */

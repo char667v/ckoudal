@@ -5,18 +5,10 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		colors: {
-			primary:'#000000', /* sort */
-			secondary: '#6E744C',/* grøn */
-			tertiary: '#FBDEB7', /* gul agtig */
-			accent: '#FFDA03',/* neon gul */
-			grey: { 700: '#4A5568' },
-			white: '#fafafa',
+			primary:'#212121', /* sort */ /* DONE */
+			secondary: '#FFDA03',/* neon gul */ /* DONE */
 		},
 		extend: {
-			fontFamily: {
-				/* poppins: ['Poppins', 'sans-serif'], */
-				serif: ['Lora', 'serif'],
-			},
 			spacing: {
 				'58': '230px',
 				'100': '25rem',

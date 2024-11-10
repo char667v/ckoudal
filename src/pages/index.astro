@@ -1,6 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Projectcardtest from "../components/Projectcardtest.astro";
+/* import Projectcardtest from "../components/Projectcardtest.astro"; */
 import Linkedbtn from "../components/Linkedbtn.astro";
 import Blob from "../components/Blob.astro";
 import Skill from "../components/Skill.astro";
@@ -12,32 +12,17 @@ import Footer from "../components/Footer.astro";
 
 <MainLayout title="CKoudal">
   <div class=" main">
-  <!-- ---------- LP/Hero section ---------- -->
-  <section id="section 1">
-    <div>
-      <h1 class="text-5xl md:text-8xl mb-0 uppercase ml-[2.4rem] md:ml-24">DIGITAL DESIGNER</h1><span class="border-solid border-b-2 border-[#ecd14b] flex-1 h-1 ml-2"></span>
-      <h2 class="pt-40 md:pt-48 ml-[2.4rem] md:ml-[6.4rem] text-primary">CHARLOTTE KOUDAL <span><h3>MMD STUDENT</h3></span></h2>
-      
-      <h3 class="ml-[2.4rem] md:ml-[6.4rem] text-xl md:text-2xl pt-20 md:pt-28 text-white">LET'S PLAY CARDS!</h3>
-      <h4 class="ml-[2.4rem] md:ml-[6.4rem] text-sm">Or click at recent projects.</h4>
-      <img src="/svg/linesolid3.svg" alt="curved arrow line" class="h-24 w-24 -mt-[2.2rem] ml-52 md:ml-58 transform scale-y-[1] scale-x-[-1] -rotate-45">
-    </div>
-  </section>
 
-<!-- ---------- Projectcard section ---------- -->
-  <section id="projects">
+  <!-- ---------- Hero section ---------- -->
+  <section id="section 1"><!-- id rettet -->
     <div>
-     <Projectcardtest/>
-    </div>
+      <h1 class="text-5xl md:text-8xl mb-0 uppercase ml-[2.4rem] md:ml-24">DIGITAL DESIGNER</h1><span class="border-solid border-b-2 border-[#fede3e] flex-1 h-1 ml-2"></span>
+      <h2 class="pt-40 md:pt-48 ml-[2.4rem] md:ml-[6.4rem] text-primary">CHARLOTTE KOUDAL <span><h3>MMD STUDENT</h3></span></h2>
+     </div>
   </section>
-  
-<!-- bg white -->
-<div class="custom-white-bg h-12 mt-44 border-block-end-width w-full"></div>
 
 <!-- ---------- About section ---------- -->
-
-
-<section id="aboutme">
+<section id="section 2"><!-- id rettet -->
 <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pb-32 pb-20 px-8 md:px-16 lg:px-32 xl:px-64 md:gap-10 gap-6">
   
   <!-- Mobile Layout -->
@@ -97,8 +82,8 @@ import Footer from "../components/Footer.astro";
 </div>
 </section>
 
-<!-- ---------- Skill section ---------- -->
-<section id="myskills">
+<!-- ---------- Skills section ---------- -->
+<section id="section 3"> <!-- id rettet -->
   <div class="bg-white mt-20 h-auto md:h-130">
     <h2 class="text-5xl md:text-3xl mb-0 uppercase ml-9 md:ml-[3.7rem] pt-24 pb-28 text-primary">Skills</h2>
     <div class="grid grid-cols-2 md:grid-cols-5 gap-6 pb-28">
@@ -146,6 +131,13 @@ import Footer from "../components/Footer.astro";
   </div>
 </section>
 
+<!-- ---------- Projectcard section ---------- -->
+<section id="section 4"> <!-- id rettet -->
+  <div>
+   <!-- <Projectcardtest/> -->
+  </div>
+</section> 
+
 <!-- Skill bg -->
 <section id="skillsbg -mt-80">
 <div class="custom-skill-bg min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[80vh] xl:min-h-[90vh]"></div>
@@ -157,7 +149,7 @@ import Footer from "../components/Footer.astro";
   <h2 class="text-4xl md:text-l mb-0 uppercase ml-9 pt-4 text-primary">Contact</h2>
   
 
-  <section id="contact" class="text-lg leading-9 p-8 pt-16 md:p-16 md:flex md:gap-10 md:justify-start md:items-start">
+  <section id="section 5" class="text-lg leading-9 p-8 pt-16 md:p-16 md:flex md:gap-10 md:justify-start md:items-start">
     <div class="pb-10 flex-1">
       <!-- Venstre Kolonne (Kontaktoplysninger) -->
       <div class="flex flex-col text-primary -ml-5">
