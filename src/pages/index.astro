@@ -29,38 +29,39 @@ import Upbtn from "../components/Upbtn.astro";
   </section>
 
 <!-- ---------- About section ---------- -->
-<section id="section 2">
-  <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pb-32 pb-20 pl-0 md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10 gap-6">
-
-  <!-- Mobile Layout -->
-  <div class="block lg:hidden pt-8 pl-0">
-    <div>
-      <div class="flex pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
-        <h2><strong>ABOUT</strong></h2>
-        <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] ml-48"></span>
-      </div>
-
+<section id="section 2" class="flex flex-col items-center justify-center">
+  <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pb-32 pb-20 md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10 gap-6 items-center justify-center">
+    <!-- Mobile Layout -->
+    <div class="block lg:hidden pt-8 mx-auto text-center">
       <div>
-        <p class="mb-4 ">I’m a multimedia design student at KEA, passionate about the UX design process. I’m currently seeking an internship where I can further develop my skills and contribute to impactful design projects.</p>
-        <p class="mb-4">I love creating solutions that balance functionality, aesthetics, and impact, addressing both user and business needs. My process includes:</p>
-    
-        <ul class="list-disc ml-14 mb-4 space-y-2 ">
-          <li><strong>User Research:</strong> Interviews, user stories, journey mapping</li>
-          <li><strong>Design Iteration:</strong> Developing ideas through feedback and testing</li>
-          <li><strong>Visual Design:</strong> Crafting mood boards, style guides, applying typography & color theory</li>
-          <li><strong>Prototyping & Testing:</strong> Using Figma for wireframes, information architecture, and usability testing</li>
-        </ul>
-    
-        <p class="mb-4 pb-10">I’m driven to design meaningful user experiences that blend visual appeal with functionality. If you’re interested in collaborating, let’s connect!</p>
-      </div>
+        <div class="flex justify-center items-center space-x-2 pb-16">
+          <h2><strong>ABOUT</strong></h2>
+          <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px]"></span>
+        </div>
 
-      <div class="flex flex-col items-center justify-center text-center">
-        <img src="../img/profileimg.png" alt="Blomst" class="filter grayscale h-90 mt-2 sm:h-[28rem] md:h-[28rem] lg:h-[28rem] xl:h-[28rem] w-auto" />
-        <div class="flex items-center justify-center -mt-20 pb-10 ml-[3.5rem]"><Linkedbtn /></div><!-- skal rettes! -->
+        <div class="max-w-screen-md mx-auto">
+          <p class="mb-4">I’m a multimedia design student at KEA, passionate about the UX design process. I’m currently seeking an internship where I can further develop my skills and contribute to impactful design projects.</p>
+          <p class="mb-4">I love creating solutions that balance functionality, aesthetics, and impact, addressing both user and business needs. My process includes:</p>
+      
+          <ul class="list-disc ml-14 mb-4 space-y-2 text-left">
+            <li><strong>User Research:</strong> Interviews, user stories, journey mapping</li>
+            <li><strong>Design Iteration:</strong> Developing ideas through feedback and testing</li>
+            <li><strong>Visual Design:</strong> Crafting mood boards, style guides, applying typography & color theory</li>
+            <li><strong>Prototyping & Testing:</strong> Using Figma for wireframes, information architecture, and usability testing</li>
+          </ul>
+      
+          <p class="mb-4 pb-10">I’m driven to design meaningful user experiences that blend visual appeal with functionality. If you’re interested in collaborating, let’s connect!</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-center">
+          <img src="../img/profileimg.png" alt="Blomst" class="filter grayscale h-90 mt-2 sm:h-[28rem] w-auto" />
+          <div class="flex items-center justify-center -mt-20 pb-10"><Linkedbtn /></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- ---------- Skills section ---------- -->
 <section id="section 3"> 
@@ -173,6 +174,7 @@ import Upbtn from "../components/Upbtn.astro";
     <img src="../img/flower.webp" alt="Blomst" class="mx-auto h-96 w-auto -mr-28" />
   </div>
 </section>
+
   <Upbtn />
 </div>
 </MainLayout>
