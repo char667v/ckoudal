@@ -53,21 +53,6 @@
     color: var(--primary-color-500);
   }
   
-  h5 {/* DONE */
-    font-family: "Aboreto", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--primary-color-500);
-  }
-  
-  h6 {/* DONE */
-    font-family: "Poppins", ;
-    font-weight: 80;
-    font-size: small;
-    font-style: normal;
-    color: var(--primary-color-500);
-  }
-
   p {/* DONE */
     @apply text-lg md:text-lg mb-0 ml-6;
   }
