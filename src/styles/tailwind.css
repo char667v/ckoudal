@@ -23,7 +23,7 @@
   }
 
    h1 {/* DONE */
-    @apply text-3xl sm:text-5xl md:text-7xl;
+    @apply text-5xl sm:text-6xl md:text-7xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
     font-style: normal;
@@ -31,7 +31,7 @@
   }
   
   h2 {/* DONE */
-    @apply text-xl md:text-4xl;
+    @apply text-3xl md:text-4xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
     font-style: normal;
@@ -39,7 +39,7 @@
   }
 
   h3 {/* DONE */
-    @apply text-sm md:text-2xl;
+    @apply text-xl md:text-xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
     font-style: normal;
