@@ -12,18 +12,18 @@ import Upbtn from "../components/Upbtn.astro";
   <!-- ---------- Hero section ---------- -->
   <section id="section 1">
     <div class="filter grayscale">
-      <h1 class="flex items-start mt-28 md:mt-36 ml-6 sm:ml-14 md:ml-32 lg:ml-52 mb-0">
-      </strong> DIGITAL DESIGNER </strong>
-        <span class="hidden md:inline-block border-[0.2px] border-primary w-40 md:w-60 lg:w-[360px] h-0.5 ml-2 mt-4 md:mt-6 lg:mt-14"></span>
+      <h1 class="flex items-start mt-28 md:mt-36 ml-10 mb-0"> <!-- sm:ml-14 md:ml-32 lg:ml-52 -->
+      <strong> DIGITAL DESIGNER </strong>
+        <span class="hidden md:inline-block border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] lg:mt-[58px]"></span>
       </h1>
       
-      <div class="pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52">
-        <h2>CHARLOTTE KOUDAL</h2>
+      <div class="pt-2 ml-10"> <!-- sm:ml-14 md:ml-40 lg:ml-52 -->
+        <h2 class="">CHARLOTTE KOUDAL</h2>
         <h3 class="mt-[0.6rem] md:mt-[0.4rem] lg:mt-2">MMD STUDENT</h3>
       </div>
       
      <div>
-      <img src="../svg/flower1.svg" alt="Blomst" class="mt-[4.6rem] md:mt-12 w-auto pb-10" />
+      <img src="../svg/flower1.svg" alt="Decorativ blomst grafik" class="mt-[4.6rem] md:mt-12 w-auto pb-10" />
      </div>
     </div>
   </section>
@@ -37,7 +37,7 @@ import Upbtn from "../components/Upbtn.astro";
       <div>
         <div class="flex pt-2 ml-6 sm:ml-14 md:ml-0 space-x-2 pb-16">
           <h2><strong>ABOUT</strong></h2>
-          <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] lg:mt-[32px]"></span>
+          <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] sm:mt-[2px] lg:mt-[32px]"></span>
         </div>
 
         <div>
@@ -65,10 +65,14 @@ import Upbtn from "../components/Upbtn.astro";
     <!-- Mobile Layout -->
     <div class="block lg:hidden pt-8">
       <div>
-        <div class="flex pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
-          <h2><strong>ABOUT</strong></h2>
-          <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] ml-48"></span>
+        <div class="flex pt-2 ml-10 pb-16">
+          <h2 class="relative"><strong>ABOUT</strong></h2>
+          <!-- Move the line to the left using negative margin -->
+          <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[27px] ml-[-5px]"></span>
         </div>
+      </div>
+    </div>
+    
 
         <div>
           <p class="mb-4">I’m a multimedia design student at KEA, passionate about the UX design process. I’m currently seeking an internship where I can further develop my skills and contribute to impactful design projects.</p>
