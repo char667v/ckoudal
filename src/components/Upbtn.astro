@@ -6,7 +6,7 @@
 <button
   id="scrollUp"
   class="liquid-button fixed bottom-8 right-4 flex items-center justify-center 
-    p-2 m-2 rounded-full bg-transparent text-[var(--box-color)] cursor-pointer transition-colors duration-100 font-bold">
+    p-2 m-2 rounded-full bg-transparent cursor-pointer transition-colors duration-100">
   <div class="liquid wave"></div>
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -22,35 +22,28 @@
   </svg>
 </button>
 
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("scrollUp");
     const liquid = button.querySelector(".liquid");
 
-    // Juster højde baseret på musens position - desktop only
     button.addEventListener("mousemove", (e) => {
-      if (window.innerWidth > 768) { // Desktop-størrelse check
-        const { width } = button.getBoundingClientRect();
-        const mouseX = e.clientX - button.getBoundingClientRect().left;
-        const fillPercentage = mouseX / width;
-        liquid.style.height = `${80 + 50 * fillPercentage}%`;
-      }
+      const { width } = button.getBoundingClientRect();
+      const mouseX = e.clientX - button.getBoundingClientRect().left;
+      const fillPercentage = mouseX / width; // Get fill percentage based on mouse position
+      (liquid as HTMLElement).style.height = `${80 + 50 * fillPercentage}%`; // Fill more based on mouse position
     });
 
     button.addEventListener("mouseleave", () => {
-      liquid.style.height = '50%';
+      (liquid as HTMLElement).style.height = '50%'; // Reset height on mouse leave
     });
 
-    // Scroll til toppen - både click og touchstart events
-    const scrollToTop = () => {
+    button.addEventListener("click", () => {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-    };
-
-    button.addEventListener("click", scrollToTop);
-    button.addEventListener("touchstart", scrollToTop); // Tilføj touch support for mobil
+    });
   });
 </script>
-
