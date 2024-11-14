@@ -13,12 +13,12 @@ import cv from "../pages/cv.astro";
   <!-- ---------- Hero section ---------- -->
   <section id="section 1">
     <div class="filter grayscale">
-      <h1 class="flex items-start mt-28 md:mt-36 ml-10 mb-0"> <!-- sm:ml-14 md:ml-32 lg:ml-52 -->
+      <h1 class="flex items-start mt-28 md:mt-36 ml-10 mb-0 sm:ml-14 md:ml-32 lg:ml-52">
       <strong> DIGITAL DESIGNER </strong>
-        <span class="hidden md:inline-block border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] lg:mt-[58px]"></span>
+        <span class="hidden md:inline-block border-solid border-[0.2px] lg:border-[0.2px]border-primary w-[20rem] h-[0.25px] mt-[24px] lg:mt-[58px] -lg:ml-6" style="border-color: var(--primary-color-500)"></span>
       </h1>
       
-      <div class="pt-2 ml-10"> <!-- sm:ml-14 md:ml-40 lg:ml-52 -->
+      <div class="pt-2 ml-10 sm:ml-14 md:ml-32 lg:ml-52">
         <h2 class="">CHARLOTTE KOUDAL</h2>
         <h3 class="mt-[0.6rem] md:mt-[0.4rem] lg:mt-2">MMD STUDENT</h3>
       </div>
@@ -31,47 +31,51 @@ import cv from "../pages/cv.astro";
 
 <!-- ---------- About section ---------- -->
 <section id="section 2">
-  <div class="grid grid-cols-1 pt-32 pb-20 pl-0 gap-6"> <!--  lg:grid-cols-2  md:pb-32  md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10  lg:ml-20 -->
+  <div class="grid grid-cols-1 pt-32 pb-20 pl-0 gap-6 md:pb-32  md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10 lg:ml-20">
 
     <!-- Desktop Layout -->
-    <div class="hidden lg:block pt-8">
-      <div>
+    <div class="hidden lg:flex pt-8 space-x-10 lg:-mt-12">
+      <!-- Left side: Text -->
+      <div class="flex-1">
         <div class="flex pt-2 ml-6 sm:ml-14 md:ml-0 space-x-2 pb-16">
           <h2><strong>ABOUT</strong></h2>
-        <span class="border-solid border-[0.2px] w-[0.8rem] h-[0.25px] sm:mt-[2px] lg:mt-[32px]" style="border-color: var(--primary-color-500)"></span>
+          <span class="border-solid border-[0.2px] w-[0.8rem] h-[0.25px] sm:mt-[2px] lg:w-[30.8rem] lg:mt-[32px] -lg:ml-30" style="border-color: var(--primary-color-500)"></span>
         </div>
-
+    
         <div>
           <p class="mb-4">I’m a multimedia design student at KEA, passionate about the UX design process. I’m currently seeking an internship where I can further develop my skills and contribute to impactful design projects.</p>
           <p class="mb-4">I love creating solutions that balance functionality, aesthetics, and impact, addressing both user and business needs. My process includes:</p>
-      
+    
           <ul class="list-disc ml-14 mb-4 space-y-2">
             <li><strong>User Research:</strong> Interviews, user stories, journey mapping</li>
             <li><strong>Design Iteration:</strong> Developing ideas through feedback and testing</li>
             <li><strong>Visual Design:</strong> Crafting mood boards, style guides, applying typography & color theory</li>
             <li><strong>Prototyping & Testing:</strong> Using Figma for wireframes, information architecture, and usability testing</li>
           </ul>
-      
+    
           <p class="mb-4 pb-10">I’m driven to design meaningful user experiences that blend visual appeal with functionality. If you’re interested in collaborating, let’s connect!</p>
         </div>
       </div>
+    
+      <!-- Right side: Image and Linkedbtn underneath -->
+      <div class="flex-1 flex flex-col items-center justify-center text-center lg:ml-56">
+        <img src="../img/profileimg.png" alt="Profile Image" class="filter grayscale h-90 mt-2 lg:mt-10 sm:h-[28rem] md:h-[28rem] lg:h-[28rem] xl:h-[28rem] w-auto" />
+        <div class="flex items-center justify-center mt-4 lg:-mt-16">
+          <Linkedbtn />
+        </div>
+      </div>
     </div>
-
-    <!-- Image on the Right Side -->
-    <div class="hidden lg:flex flex-col items-center justify-center text-center">
-      <img src="../img/profileimg.png" alt="Profile Image" class="filter grayscale h-90 mt-2 sm:h-[28rem] md:h-[28rem] lg:h-[28rem] xl:h-[28rem] w-auto" />
-      <div class="flex items-center justify-center -mt-20"><Linkedbtn /></div>
-    </div>
+    
+      
 
     <!-- Mobile Layout -->
-    <div class="block lg:hidden pt-8">
+    <div class="block md:hidden lg:hidden pt-8">
       <div>
         <div class="flex pt-2 -mt-20 ml-10 pb-16">
           <h2 class="relative"><strong>ABOUT</strong></h2>
           <span class="border-solid border-[0.2px] w-[12.4rem] h-[0.25px] mt-[27px] ml-[-5px]" style="border-color: var(--primary-color-500);"></span>
         </div>
       </div>
-    </div>
     
       <div class="items-center justify-center p-4">
         <div>
@@ -101,9 +105,9 @@ import cv from "../pages/cv.astro";
 <section id="section 3"> 
   <div class="pt-40">
 
-    <div class="flex pt-2 ml-10 pb-16 -mt-[10.6rem]">
+    <div class="flex pt-2 ml-10 lg:ml-52 pb-16 -mt-[10.6rem]">
       <h2 class="relative"><strong>SKILLS</strong></h2>
-      <span class="border-solid border-[0.2px] w-[12.8rem] h-[0.25px] mt-[27.4px] ml-[-12px]" style="border-color: var(--primary-color-500)"></span>
+      <span class="border-solid border-[0.2px] w-[12.8rem] h-[0.25px] mt-[27.4px] ml-[-12px] lg:w-[30.8rem] lg:mt-[30.8px]" style="border-color: var(--primary-color-500)"></span>
     </div>
 
     <div class="grid -mt-12 grid-cols-1 md:grid-cols-5 mb-14 gap-4">
