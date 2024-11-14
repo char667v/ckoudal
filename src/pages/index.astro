@@ -31,7 +31,7 @@ import cv from "../pages/cv.astro";
 
 <!-- ---------- About section ---------- -->
 <section id="section 2">
-  <div class="grid grid-cols-1 pt-10 pb-20 pl-0 gap-6"> <!--  lg:grid-cols-2  md:pb-32  md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10  lg:ml-20 -->
+  <div class="grid grid-cols-1 pt-32 pb-20 pl-0 gap-6"> <!--  lg:grid-cols-2  md:pb-32  md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10  lg:ml-20 -->
 
     <!-- Desktop Layout -->
     <div class="hidden lg:block pt-8">
@@ -102,7 +102,7 @@ import cv from "../pages/cv.astro";
 
 <!-- ---------- Skills section ---------- -->
 <section id="section 3"> 
-  <div class="">
+  <div class="pt-40">
 
     <div class="flex pt-2 -mt-20 ml-10 pb-16">
       <h2 class="relative"><strong>SKILLS</strong></h2>
@@ -156,6 +156,7 @@ import cv from "../pages/cv.astro";
 
 <!-- ---------- Projectcard section ---------- -->
 <section id="section 4 overflow hidden border">
+  <div class="pt-[10rem]">
   <div class="flex pt-2 -mt-20 ml-10 pb-16">
     <h2 class="relative"><strong>PROJECTS</strong></h2>
     <span class="border-solid border-[0.2px] border-primary w-[26.8rem] h-[0.25px] mt-[27px] ml-[-5px]"></span>
@@ -163,11 +164,13 @@ import cv from "../pages/cv.astro";
   <div>
    <Projectcardtest/>
   </div>
+</div>
 </section> 
 
 <!-- ---------- Contact section ---------- -->
 
 <section id="section 5">
+  <div class="pt-[10rem]">
   <div class="flex flex-col">
     <div class="flex pt-2 -mt-20 ml-10 pb-16">
       <h2 class="relative"><strong>CONTACT</strong></h2>
@@ -214,11 +217,12 @@ import cv from "../pages/cv.astro";
           </div>
         </div> -->
       </div>
+    </div>
     </section>
   </div>
 
-  <div class="filter grayscale">
-    <img src="../img/flower.webp" alt="Blomst" class="mx-auto h-96 w-auto -mr-28" />
+  <div class="filter grayscale w-full flex justify-end place-items-end">
+    <img src="../img/flower.webp" alt="Blomst" class="h-96" />
   </div>
 </section>
 
