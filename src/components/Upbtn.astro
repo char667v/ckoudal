@@ -22,28 +22,35 @@
   </svg>
 </button>
 
-
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("scrollUp");
     const liquid = button.querySelector(".liquid");
 
+    // Juster højde baseret på musens position - desktop only
     button.addEventListener("mousemove", (e) => {
-      const { width } = button.getBoundingClientRect();
-      const mouseX = e.clientX - button.getBoundingClientRect().left;
-      const fillPercentage = mouseX / width; // Get fill percentage based on mouse position
-      (liquid as HTMLElement).style.height = `${80 + 50 * fillPercentage}%`; // Fill more based on mouse position
+      if (window.innerWidth > 768) { // Desktop-størrelse check
+        const { width } = button.getBoundingClientRect();
+        const mouseX = e.clientX - button.getBoundingClientRect().left;
+        const fillPercentage = mouseX / width;
+        liquid.style.height = `${80 + 50 * fillPercentage}%`;
+      }
     });
 
     button.addEventListener("mouseleave", () => {
-      (liquid as HTMLElement).style.height = '50%'; // Reset height on mouse leave
+      liquid.style.height = '50%';
     });
 
-    button.addEventListener("click", () => {
+    // Scroll til toppen - både click og touchstart events
+    const scrollToTop = () => {
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-    });
+    };
+
+    button.addEventListener("click", scrollToTop);
+    button.addEventListener("touchstart", scrollToTop); // Tilføj touch support for mobil
   });
 </script>
+
