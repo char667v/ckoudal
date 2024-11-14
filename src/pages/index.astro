@@ -7,37 +7,72 @@ import Upbtn from "../components/Upbtn.astro";
 ---
 
 <MainLayout title="CKoudal">
-  <div class="main">
+  <div class=" main">
 
   <!-- ---------- Hero section ---------- -->
-  <section id="section-1">
+  <section id="section 1">
     <div class="filter grayscale">
-      <h1 class="flex items-start mt-28 ml-10 mb-0">
-        <strong>DIGITAL DESIGNER</strong>
+      <h1 class="flex items-start mt-28 md:mt-36 ml-10 mb-0"> <!-- sm:ml-14 md:ml-32 lg:ml-52 -->
+      <strong> DIGITAL DESIGNER </strong>
+        <span class="hidden md:inline-block border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] lg:mt-[58px]"></span>
       </h1>
       
-      <div class="pt-2 ml-10">
-        <h2>CHARLOTTE KOUDAL</h2>
-        <h3 class="mt-[0.6rem]">MMD STUDENT</h3>
+      <div class="pt-2 ml-10"> <!-- sm:ml-14 md:ml-40 lg:ml-52 -->
+        <h2 class="">CHARLOTTE KOUDAL</h2>
+        <h3 class="mt-[0.6rem] md:mt-[0.4rem] lg:mt-2">MMD STUDENT</h3>
       </div>
       
-      <div>
-        <img src="../svg/flower1.svg" alt="Decorativ blomst grafik" class="mt-[4.6rem] w-auto pb-10" />
-      </div>
+     <div>
+      <img src="../svg/flower1.svg" alt="Decorativ blomst grafik" class="mt-[4.6rem] md:mt-12 w-auto pb-10" />
+     </div>
     </div>
   </section>
 
-  <!-- ---------- About section ---------- -->
-  <section id="section-2">
-    <div class="grid grid-cols-1 pt-10 pb-20 pl-0 pr-8 gap-6">
-      <!-- Mobile Layout -->
-      <div class="block pt-8">
+<!-- ---------- About section ---------- -->
+<section id="section-2">
+  <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pb-32 pb-20 pl-0 md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10 gap-6 lg:ml-20">
+
+    <!-- Desktop Layout -->
+    <div class="hidden lg:block pt-8">
+      <div>
+        <div class="flex pt-2 ml-6 sm:ml-14 md:ml-0 space-x-2 pb-16">
+          <h2><strong>ABOUT</strong></h2>
+          <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] sm:mt-[2px] lg:mt-[32px]"></span>
+        </div>
+
+        <div>
+          <p class="mb-4">I’m a multimedia design student at KEA, passionate about the UX design process. I’m currently seeking an internship where I can further develop my skills and contribute to impactful design projects.</p>
+          <p class="mb-4">I love creating solutions that balance functionality, aesthetics, and impact, addressing both user and business needs. My process includes:</p>
+      
+          <ul class="list-disc ml-14 mb-4 space-y-2">
+            <li><strong>User Research:</strong> Interviews, user stories, journey mapping</li>
+            <li><strong>Design Iteration:</strong> Developing ideas through feedback and testing</li>
+            <li><strong>Visual Design:</strong> Crafting mood boards, style guides, applying typography & color theory</li>
+            <li><strong>Prototyping & Testing:</strong> Using Figma for wireframes, information architecture, and usability testing</li>
+          </ul>
+      
+          <p class="mb-4 pb-10">I’m driven to design meaningful user experiences that blend visual appeal with functionality. If you’re interested in collaborating, let’s connect!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image on the Right Side -->
+    <div class="hidden lg:flex flex-col items-center justify-center text-center">
+      <img src="../img/profileimg.png" alt="Profile Image" class="filter grayscale h-90 mt-2 sm:h-[28rem] md:h-[28rem] lg:h-[28rem] xl:h-[28rem] w-auto" />
+      <div class="flex items-center justify-center -mt-20 pb-10"><Linkedbtn /></div>
+    </div>
+
+    <!-- Mobile Layout -->
+    <div class="block lg:hidden pt-8">
+      <div>
         <div class="flex pt-2 -mt-20 ml-10 pb-16">
           <h2 class="relative"><strong>ABOUT</strong></h2>
+          <!-- Move the line to the left using negative margin -->
           <span class="border-solid border-[0.2px] border-primary w-[26.8rem] h-[0.25px] mt-[27px] ml-[-5px]"></span>
         </div>
       </div>
-      
+    </div>
+    
       <div class="items-center justify-center">
         <div>
           <p class="mb-4">I’m a multimedia design student at KEA, passionate about the UX design process. I’m currently seeking an internship where I can further develop my skills and contribute to impactful design projects.</p>
@@ -54,98 +89,104 @@ import Upbtn from "../components/Upbtn.astro";
         </div>
 
         <div class="flex flex-col items-center justify-center text-center">
-          <img src="../img/profileimg.png" alt="Profile Image" class="filter grayscale h-90 mt-2 w-auto" />
+          <img src="../img/profileimg.png" alt="Profile Image" class="filter grayscale h-90 mt-2 sm:h-[28rem] md:h-[28rem] lg:h-[28rem] xl:h-[28rem] w-auto" />
           <div class="flex items-center justify-center -mt-20 pb-10 ml-[3.5rem]"><Linkedbtn /></div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- ---------- Skills section ---------- -->
-  <section id="section-3"> 
-    <div class="">
-      <div class="flex pt-2 ml-6 space-x-2 pb-16">
-        <h2><strong>SKILLS</strong></h2>
-        <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px]"></span>
+  </div>
+</section>
+
+
+<!-- ---------- Skills section ---------- -->
+<section id="section 3"> 
+  <div class="">
+
+    <div class="flex pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
+      <h2><strong>SKILLS</strong></h2>
+      <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] ml-48 lg:mt-[32px]"></span>
+    </div>
+
+    <div class="grid -mt-12 ml-[2rem] grid-cols-2 md:grid-cols-5 mb-14 gap-4">
+      <div class="flex flex-col items-center"> 
+        <Skill
+          imageSrc="/svg/figma_outline.svg"
+          alt="Figma icon"
+          altText="foto"
+          headline="Figma"
+          paragraphText="Figma is my trusted tool for creating clear, visually appealing wireframes and prototypes that enhance project collaboration and efficiency." />
       </div>
-
-      <div class="grid -mt-12 ml-[2rem] grid-cols-2 mb-14 gap-4">
-        <div class="flex flex-col items-center"> 
-          <Skill
-            imageSrc="/svg/figma_outline.svg"
-            alt="Figma icon"
-            altText="foto"
-            headline="Figma"
-            paragraphText="Figma is my trusted tool for creating clear, visually appealing wireframes and prototypes that enhance project collaboration and efficiency." />
-        </div>
-        <div class="flex flex-col items-center"> 
-          <Skill
-            imageSrc="/svg/adobe_outline.svg"
-            alt="Adobe Creative Cloud"
-            altText="foto"
-            headline="Adobe CC"
-            paragraphText="In the Adobe suite, I primarily use Photoshop and Illustrator for image editing, website graphics, and illustrations, including logos and other visual assets." />
-        </div>
-        <div class="flex flex-col items-center"> 
-          <Skill
-            imageSrc="/svg/vsc_outline.svg"
-            alt="Visual Studio Code icon"
-            altText="foto"
-            headline="Html, Css & Js"
-            paragraphText="When creating websites I use HTML, CSS, JavaScript, and Tailwind, with Visual Studio Code as my development environment." />
-        </div>
-        <div class="flex flex-col items-center"> 
-          <Skill
-            imageSrc="/svg/codepen_outline.svg"
-            alt="CodePen icon"
-            altText="foto"
-            headline="CodePen"
-            paragraphText="I use CodePen to creatively experiment with design and quickly see the results of my HTML, CSS, and JavaScript projects in real time."/>
-        </div>
-        <div class="flex flex-col items-center pb-20"> 
-          <Skill
-            imageSrc="/svg/chat_outline.svg"
-            alt="ChatGpt icon"
-            altText="foto"
-            headline="ChatGpt"
-            paragraphText="ChatGPT is a great source of inspiration, effectively helping with ideas for design challenges and copywriting as I develop my projects." />
-        </div>
+      <div class="flex flex-col items-center"> 
+        <Skill
+          imageSrc="/svg/adobe_outline.svg"
+          alt="Adobe Creative Cloud"
+          altText="foto"
+          headline="Adobe CC"
+          paragraphText="In the Adobe suite, I primarily use Photoshop and Illustrator for image editing, website graphics, and illustrations, including logos and other visual assets." />
+      </div>
+      <div class="flex flex-col items-center"> 
+        <Skill
+          imageSrc="/svg/vsc_outline.svg"
+          alt="Visual Studio Code icon"
+          altText="foto"
+          headline="Html, Css & Js"
+          paragraphText="When creating websites I use HTML, CSS, JavaScript, and Tailwind, with Visual Studio Code as my development environment." />
+      </div>
+      <div class="flex flex-col items-center"> 
+        <Skill
+          imageSrc="/svg/codepen_outline.svg"
+          alt="CodePen icon"
+          altText="foto"
+          headline="CodePen"
+          paragraphText="I use CodePen to creatively experiment with design and quickly see the results of my HTML, CSS, and JavaScript projects in real time."/>
+      </div>
+      <div class="flex flex-col items-center pb-20"> 
+        <Skill
+          imageSrc="/svg/chat_outline.svg"
+          alt="ChatGpt icon"
+          altText="foto"
+          headline="ChatGpt"
+          paragraphText="ChatGPT is a great source of inspiration, effectively helping with ideas for design challenges and copywriting as I develop my projects." />
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ---------- Projectcard section ---------- -->
-  <section id="section-4 overflow-hidden border">
-    <div class="flex item-center pt-2 ml-6 space-x-2 pb-16">
-      <h2><strong>PROJECTS</strong></h2>
-      <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px]"></span>
+<!-- ---------- Projectcard section ---------- -->
+<section id="section 4 overflow hidden border">
+  <div class="flex item-center pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
+    <h2><strong>PROJECTS</strong></h2>
+    <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48 lg:mt-[32px]"></span>
+  </div>
+  <div>
+   <Projectcardtest/>
+  </div>
+</section> 
+
+<!-- ---------- Contact section ---------- -->
+
+<section id="section 5">
+  <div class="flex flex-col">
+    <div class="flex pt- md:pt-2 ml-6 md:ml-[16.4rem] space-x-2 pb-16 mt-[2rem] lg:ml-[6rem]">
+      <h2><strong>CONTACT</strong></h2>
+      <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48 lg:mt-[32px]"></span>
     </div>
-    <div>
-      <Projectcardtest/>
-    </div>
-  </section> 
 
-  <!-- ---------- Contact section ---------- -->
-  <section id="section-5">
-    <div class="flex flex-col">
-      <div class="flex pt-2 ml-6 space-x-2 pb-16 mt-[2rem]">
-        <h2><strong>CONTACT</strong></h2>
-        <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px]"></span>
-      </div>
-
-      <section class="mt-2 p-8 flex flex-col text-primary ml-0 -mt-20">
+    <section class="mt-2 p-8 md:p-16 md:flex md:gap-10 md:justify-start md:items-center lg:ml-[6rem]">
+      <div class="flex flex-col text-primary ml-0 -mt-20 md:ml-6">
         <div class="flex items-center">
-          <img src="../svg/pen_papir.svg" alt="pen og papir ikon" class="mt-[2.6rem] ml-6 w-auto pb-10" />
+          <img src="../svg/pen_papir.svg" alt="pen og papir ikon" class="mt-[2.6rem] ml-6 md:mt-12 w-auto pb-10" />
           <div>
             <p>Mail</p>
-            <a href="mailto:c.koudal@gmail.com" class="hover:text-secondary transition" style="font-family: var(--main-font);">
+            <a href="mailto:c.koudal@gmail.com" class="l-6 hover:text-secondary transition" style="font-family: var(--main-font);">
               <p>c.koudal@gmail.com</p>
             </a>
           </div>
         </div>
 
         <div class="flex items-center">
-          <img src="../svg/linkedin.svg" alt="Linkedin ikon" class="mt-[2.6rem] ml-3 w-auto pb-10" />
+          <img src="../svg/linkedin.svg" alt="Linkedin ikon" class="mt-[2.6rem] ml-3 md:mt-12 w-auto pb-10" />
           <div>
             <p>Socials</p>
             <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" target="_blank" class="hover:text-secondary" style="font-family: var(--main-font);">
@@ -155,20 +196,32 @@ import Upbtn from "../components/Upbtn.astro";
         </div>
 
         <div class="flex items-center">
-          <img src="../svg/cup.svg" alt="Te kop" class="mt-[1.6rem] ml-6 w-auto pb-10" />
+          <img src="../svg/cup.svg" alt="Te kop" class="mt-[1.6rem] ml-6 md:mt-12 w-auto pb-10" />
           <div>
             <p>Coffee</p>
             <p>+45 29 62 48 32</p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
 
-    <div class="filter grayscale">
-      <img src="../img/flower.webp" alt="Blomst" class="mx-auto h-96 w-auto -mr-28" />
-    </div>
-  </section>
+  <div class="filter grayscale">
+    <img src="../img/flower.webp" alt="Blomst" class="mx-auto h-96 w-auto -mr-28" />
+  </div>
+</section>
 
   <Upbtn />
 </div>
 </MainLayout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const g = document.querySelector(".om_mig");
+      if (g) {
+          g.classList.add("animate__animated", "animate__slideInRight", "fadeInOpacity");
+      }
+  });
+</script>
+  <script type="module" src="/_astro/page.BA34ORVw.js"></script>
+
