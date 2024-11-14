@@ -4,6 +4,7 @@ import Projectcardtest from "../components/Projectcardtest.astro";
 import Linkedbtn from "../components/Linkedbtn.astro";
 import Skill from "../components/Skill.astro";
 import Upbtn from "../components/Upbtn.astro";
+import cv from "../pages/cv.astro";
 ---
 
 <MainLayout title="CKoudal">
@@ -30,7 +31,7 @@ import Upbtn from "../components/Upbtn.astro";
 
 <!-- ---------- About section ---------- -->
 <section id="section-2">
-  <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 md:pb-32 pb-20 pl-0 md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10 gap-6 lg:ml-20">
+  <div class="grid grid-cols-1 pt-10 pb-20 pl-0 gap-6"> <!--  lg:grid-cols-2  md:pb-32  md:pr-16 md:pl-8 lg:pr-32 lg:pl-16 xl:pr-64 xl:pl-32 md:gap-10  lg:ml-20 -->
 
     <!-- Desktop Layout -->
     <div class="hidden lg:block pt-8">
@@ -103,9 +104,9 @@ import Upbtn from "../components/Upbtn.astro";
 <section id="section 3"> 
   <div class="">
 
-    <div class="flex pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
-      <h2><strong>SKILLS</strong></h2>
-      <span class="border-solid border-[0.2px] border-primary w-[22.8rem] h-[0.25px] mt-[24px] ml-48 lg:mt-[32px]"></span>
+    <div class="flex pt-2 -mt-20 ml-10 pb-16">
+      <h2 class="relative"><strong>SKILLS</strong></h2>
+      <span class="border-solid border-[0.2px] border-primary w-[26.8rem] h-[0.25px] mt-[27px] ml-[-5px]"></span>
     </div>
 
     <div class="grid -mt-12 ml-[2rem] grid-cols-2 md:grid-cols-5 mb-14 gap-4">
@@ -155,9 +156,9 @@ import Upbtn from "../components/Upbtn.astro";
 
 <!-- ---------- Projectcard section ---------- -->
 <section id="section 4 overflow hidden border">
-  <div class="flex item-center pt-2 ml-6 sm:ml-14 md:ml-40 lg:ml-52 space-x-2 pb-16">
-    <h2><strong>PROJECTS</strong></h2>
-    <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48 lg:mt-[32px]"></span>
+  <div class="flex pt-2 -mt-20 ml-10 pb-16">
+    <h2 class="relative"><strong>PROJECTS</strong></h2>
+    <span class="border-solid border-[0.2px] border-primary w-[26.8rem] h-[0.25px] mt-[27px] ml-[-5px]"></span>
   </div>
   <div>
    <Projectcardtest/>
@@ -168,9 +169,9 @@ import Upbtn from "../components/Upbtn.astro";
 
 <section id="section 5">
   <div class="flex flex-col">
-    <div class="flex pt- md:pt-2 ml-6 md:ml-[16.4rem] space-x-2 pb-16 mt-[2rem] lg:ml-[6rem]">
-      <h2><strong>CONTACT</strong></h2>
-      <span class="border-solid border-[0.2px] border-primary w-[20.8rem] h-[0.25px] mt-[24px] ml-48 lg:mt-[32px]"></span>
+    <div class="flex pt-2 -mt-20 ml-10 pb-16">
+      <h2 class="relative"><strong>CONTACT</strong></h2>
+      <span class="border-solid border-[0.2px] border-primary w-[26.8rem] h-[0.25px] mt-[27px] ml-[-5px]"></span>
     </div>
 
     <section class="mt-2 p-8 md:p-16 md:flex md:gap-10 md:justify-start md:items-center lg:ml-[6rem]">
@@ -179,7 +180,7 @@ import Upbtn from "../components/Upbtn.astro";
           <img src="../svg/pen_papir.svg" alt="pen og papir ikon" class="mt-[2.6rem] ml-6 md:mt-12 w-auto pb-10" />
           <div>
             <p>Mail</p>
-            <a href="mailto:c.koudal@gmail.com" class="l-6 hover:text-secondary transition" style="font-family: var(--main-font);">
+            <a href="mailto:c.koudal@gmail.com" class="l-6 hover:text-[var(--secondary-color-500)]" style="font-family: var(--main-font);">
               <p>c.koudal@gmail.com</p>
             </a>
           </div>
@@ -189,7 +190,7 @@ import Upbtn from "../components/Upbtn.astro";
           <img src="../svg/linkedin.svg" alt="Linkedin ikon" class="mt-[2.6rem] ml-3 md:mt-12 w-auto pb-10" />
           <div>
             <p>Socials</p>
-            <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" target="_blank" class="hover:text-secondary" style="font-family: var(--main-font);">
+            <a href="https://www.linkedin.com/in/charlotte-k-187b9b2a" target="_blank" class="hover:text-[var(--secondary-color-500)]" style="font-family: var(--main-font);">
               <p>Linkedin</p>
             </a>
           </div>
@@ -207,7 +208,9 @@ import Upbtn from "../components/Upbtn.astro";
           <img src="../svg/cup.svg" alt="Te kop" class="mt-[1.6rem] ml-6 md:mt-12 w-auto pb-10" /><!-- husk at skifte ikon! -->
           <div>
             <p>Qualification</p>
-            <p>CV</p>
+            <a href="/cv" class="hover:text-[var(--secondary-color-500)] transition" style="font-family: var(--main-font)">
+              <p>CV</p>
+            </a>
           </div>
         </div>
       </div>
