@@ -8,7 +8,7 @@ const { imageSrc, altText, headline, paragraphText } = Astro.props;
        <img src={imageSrc} alt={altText} class="object-contain mx-auto pt-14" />
       </div>
 
-      <div class=" bg-[#ffffff] text-left max-w-[200px] sm:max-w-[225px] md:max-w-[250px] p-6 shadow-md">
+      <div class="bg-[var(--box-color)] text-left max-w-[260px] p-6 shadow-md"> <!-- sm:max-w-[225px] md:max-w-[250px] --> 
       <h6>{paragraphText}</h6>
       </div>
     </div>
