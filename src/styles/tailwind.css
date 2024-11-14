@@ -23,7 +23,7 @@
     --main-font: "Poppins", sans-serif;
   }
 
-   h1 {/* DONE */
+   h1 {
     @apply text-5xl sm:text-6xl md:text-7xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
@@ -31,7 +31,7 @@
     color: var(--primary-color-500);
   }
   
-  h2 {/* DONE */
+  h2 {
     @apply text-3xl md:text-4xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
@@ -39,7 +39,7 @@
     color: var(--primary-color-500);
   }
 
-  h3 {/* DONE */
+  h3 {
     @apply text-xl md:text-xl;
     font-family: "Aboreto", serif;
     font-weight: 400;
@@ -47,14 +47,20 @@
     color: var(--primary-color-500);
   }
 
-  h4, a {/* DONE */
+  h4, a {
     font-family: "Aboreto", serif;
     font-weight: 400;
     font-style: normal;
     color: var(--primary-color-500);
   }
+  h6 {
+    @apply text-sm;
+    font-weight: 200;
+    font-style: normal;
+    color: var(--primary-color-500);
+  }
   
-  p {/* DONE */
+  p {
     @apply text-lg md:text-lg mb-0 ml-6;
   }
 
